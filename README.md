@@ -31,7 +31,7 @@ That some corporate overlords can make locating material this rich in educationa
 ### Building & Running
 ~~**NOTE**: This has *only* been tested in an emulator. Real hardware might not like it.~~
 
-EDIT: this is not true anymore! [@parkerlreed has run this on a Thinkpad T510](https://github.com/jdah/tetrix-os/issues/5#issuecomment-824507979).
+EDIT: this is not true anymore! @parkerlreed has run this on a Thinkpad T51
 
 #### Mac OS
 For the cross-compiler: `$ brew tap nativeos/i386-elf-toolchain && brew install i386-elf-binutils i386-elf-gcc`
@@ -53,7 +53,7 @@ $ qemu-system-i386 -drive format=raw,file=boot.iso -d cpu_reset -monitor stdio -
 
 If you have sound device issues, try building without the `#define ENABLE_MUSIC` in `main.c` and running with `$ qemu-system-i386 -drive format=raw,file=boot.iso`.
 
-If you're having issues with no image showing up/QEMU freezing, this is a known bug with QEMU SB16 emulation under GTK. [Please read what @takaswie has written in #2 for a workaround](https://github.com/jdah/tetrix-os/issues/2#issuecomment-824773889).
+If you're having issues with no image showing up/QEMU freezing, this is a known bug with QEMU SB16 emulation under GTK. Please read what @takaswie has written in #2 for a workaround
 
 #### Windows
 Absolutely no idea. Maybe try WSL.
